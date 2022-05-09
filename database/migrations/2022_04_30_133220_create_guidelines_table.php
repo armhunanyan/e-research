@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('link');
-            $table->integer('sort_order');
+            $table->integer('sort_order')->default(0);
             $table->timestamps();
         });
     }

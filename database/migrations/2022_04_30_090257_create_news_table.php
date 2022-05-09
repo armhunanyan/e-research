@@ -18,8 +18,7 @@ return new class extends Migration
             $table->string('title');
             $table->text('content');
             $table->string('image');
-            $table->boolean('is_announcement');
-            $table->integer('sort_order');
+            $table->integer('sort_order')->default(0);
             $table->timestamps();
         });
     }

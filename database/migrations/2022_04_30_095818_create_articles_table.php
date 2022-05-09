@@ -19,7 +19,7 @@ return new class extends Migration
             $table->text('content');
             $table->string('image');
             $table->string('category');
-            $table->integer('sort_order');
+            $table->integer('sort_order')->default(0);
             $table->timestamps();
         });
     }

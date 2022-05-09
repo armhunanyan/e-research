@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('position');
             $table->string('image');
-            $table->integer('sort_order');
+            $table->integer('sort_order')->default(0);
             $table->timestamps();
         });
     }

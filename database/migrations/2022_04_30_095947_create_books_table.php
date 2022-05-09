@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('year');
             $table->string('image');
             $table->string('link');
-            $table->integer('sort_order');
+            $table->integer('sort_order')->default(0);
             $table->timestamps();
         });
     }

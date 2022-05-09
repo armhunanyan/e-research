@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media screen and (min-width:968px) {
+    .active {
+        position: relative;
+        font-weight: bold;
+    }
+    .active::before{
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        width: 25px;
+        height: 1px;
+        background-color: #03033F;
+    }
+}
