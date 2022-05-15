@@ -1,1 +1,1 @@
-<p class="text-blue-dark md:text-3xl text-center font-bold">{{$text}}</p>
+<p class="text-blue-dark md:text-3xl text-center font-bold">{!!$text!!}</p>

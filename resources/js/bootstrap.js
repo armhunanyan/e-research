@@ -1,4 +1,8 @@
+import Alpine from 'alpinejs'
+
 window._ = require('lodash');
+
+window.Alpine = Alpine
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
@@ -26,3 +30,4 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+Alpine.start()

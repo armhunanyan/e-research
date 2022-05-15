@@ -15,6 +15,9 @@ module.exports = {
           xl: "1200px",
       }
     },
+    fontFamily:{
+      'sans': ["Verdana", "sans-serif"],
+    },
     colors: {
       black: '#000000',
       white: '#ffffff',
@@ -29,7 +32,7 @@ module.exports = {
         hover: '#0D00D2',
         active: '#0F00F1',
         dark: '#03033F',
-        contacts: '#0C0391'
+        darker: '#0C0391'
       },
       gray: {
         DEFAULT: '#E8E8E880',
@@ -50,17 +53,25 @@ module.exports = {
     },
     extend: {
       spacing: {
+        5: '5px',
         10: '10px',
         15: '15px',
         20: '20px',
         25: '25px',
         30: '30px',
+        35: '35px',
         40: '40px',
         50: '50px',
         65: '65px',
         80: '80px',
         100: '100px',
         120: '120px',
+        200: '200px',
+        '1/10': '10%',
+        '90p': '90%',
+        '120p': '120%'
+      },
+      maxWidth: {
         200: '200px',
       },
       backgroundImage:{
@@ -71,8 +82,18 @@ module.exports = {
         fb: 'url("/images/icons/fb.svg")',
         insta: 'url("/images/icons/insta.svg")',
         ln: 'url("/images/icons/ln.svg")',
+        'arrow-left': 'url("/images/icons/arrow-left.svg")',
+        'arrow-right': 'url("/images/icons/arrow-right.svg")',
+        'arrow-prev': 'url("/images/icons/arrow-prev.svg")',
+        'arrow-next': 'url("/images/icons/arrow-next.svg")',
+        title1: 'url("/images/decorations/title1.svg")',
+        'team-matrix': 'url("/images/icons/team-matrix.svg")',
+        'decoration-circle': 'url("/images/decorations/circle.svg")'
+
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }

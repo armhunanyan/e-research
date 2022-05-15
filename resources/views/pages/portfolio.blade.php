@@ -8,20 +8,18 @@
         bg='/images/backgrounds/portfolio.jpg'
     />
 
-    <section class="py-40">
+    <section class="py-40 bg-white">
         <div class="container">
             <x-Title text="Trainings" />
-
-            <div class="grid grid-cols-3 gap-30 mt-40">
+            <div class="grid md:grid-cols-4 gap-30 mt-30 md:mt-40">
                 @foreach ($trainings as $training)
-                    <x-News :news="$training"/>
+                    <x-Training :training="$training"/>
                 @endforeach
             </div>
         </div>
     </section>
 
-    @include('partials.consulting')
-
+    @include('partials.consulting', array('bg' => 'bg-gray'))
 
     @include('partials.partners', array('partners'=>$partners))
 

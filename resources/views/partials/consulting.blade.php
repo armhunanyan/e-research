@@ -1,4 +1,4 @@
-<section class="py-40 bg-gray">
+<section class="py-40 {{$bg}}">
     <div class="container">
         <x-Title text="Consulting" />
 

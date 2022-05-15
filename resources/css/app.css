@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Verdana';
+    src: url('/fonts/verdana-bold.woff2') format('woff2'),
+        url('/fonts/verdana-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Verdana';
+    src: url('/fonts/verdana.woff2') format('woff2'),
+        url('/fonts/verdana.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 @media screen and (min-width:968px) {
     .active {
         position: relative;
@@ -15,4 +33,51 @@
         height: 1px;
         background-color: #03033F;
     }
+}
+
+.title1 {
+    background-image: url(/images/decorations/title1.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    padding: 10px 0;
+}
+.title2 {
+    position: relative;
+}
+
+.title2:before {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 200%;
+    left: -5%;
+    top: -41%;
+    background-image: url(/images/decorations/title2.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.title3 {
+    background-image: url(/images/decorations/title3.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    padding: 10px 0;
+}
+
+.title5 {
+    background-image: url(/images/decorations/title5.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    padding: 15px 0;
+}
+.title6 {
+    background-image: url(/images/decorations/title6.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    padding: 5px 0;
 }

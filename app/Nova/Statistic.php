@@ -5,6 +5,7 @@ namespace App\Nova;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class Statistic extends Resource
@@ -44,6 +45,7 @@ class Statistic extends Resource
             ID::make()->sortable(),
             Text::make( __('Metric'), 'title')->required(),
             Text::make( __('Metric value'), 'metric')->required(),
+            Textarea::make( __('Description'), 'content')->required(),
         ];
     }
 

@@ -1,6 +1,6 @@
 <section class="py-40">
     <div class="container">
-        <x-title text="Our Trusted Partners" />
+        <x-title text="Our Trusted Partners" type="2" />
         <div class="flex justify-center align-center mt-40" style="background: radial-gradient(50% 50% at 50% 50%, rgba(0, 245, 216, 0.25) 0%, rgba(180, 249, 249, 0) 100%);">
             @foreach ($partners as $partner)
                 <div class="relative w-100 h-100 rounded-full overflow-hidden mx-25">

@@ -6,13 +6,13 @@
     <div class="relative z-5">
         <div class="container">
             @isset($title)
-                <h2 class="text-white text-4xl font-bold">{{$title}}</h2>
+                <h2 class="text-white text-lg md:text-4xl font-bold">{{$title}}</h2>
             @endisset
             @isset($subtitle)
-                <p class="text-white text-48 font-bold mt-10">{{$subtitle}}</p>
+                <p class="text-white text-xs md:text-48 font-bold mt-10">{{$subtitle}}</p>
             @endisset
             @isset($button)
-                <div class="mt-40">
+                <div class="mt-15 md:mt-40">
                     <x-button
                         :text="$button"
                     />
